@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+   --font-title: "Bungee Inline", cursive;
+   --font-body: "Poppins", sans-serif;
+   --header: 4rem;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: var(--font-body);
+   font-size: 0.938rem;
+   overflow-x: hidden;
+   background-color: #eee;
+}
+
+a {
+   text-decoration: none;
+   color: #000;
+}
+
+/* HEADER */
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: var(--header);
+   backdrop-filter: blur(4px);
+   z-index: 999;
+}
+
+.header.solid {
+   background-color: #445656;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80vw;
+   height: 100%;
+   margin: auto;
+}
+
+.menu-button {
+   color: #f9f9f9;
+   font-size: 1.25rem;
+   display: none;
+}
+
+.nav-title {
+   font-family: var(--font-title);
+   color: #ef7f2b;
+   font-size: 1.25rem;
+}
+
+.nav-list {
+   list-style: none;
+   display: flex;
+   gap: 2rem;
+}
+
+.nav-link {
+   color: #f9f9f9;
+}
+
+.nav-button {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.nav-button a {
+   display: inline-block;
+   color: #f9f9f9;
+}
+
+.nav-button a:last-child {
+   background-color: #ef7f2b;
+   padding: 0.25rem 0.85rem;
+   border-radius: 5px;
+}
+
+/* MAIN */
+
+/* DISCOVER SECTION */
+.discover {
+   background-image: url("../img/home.jpg");
+   background-size: cover;
+   width: 100vw;
+}
+
+.discover-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 80vw;
+   height: 100vh;
+   margin: auto;
+}
+
+.discover-data {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2rem;
+   width: 40%;
+}
+
+.discover-title {
+   font-family: var(--font-title);
+   color: #f9f9f9;
+   font-size: 4rem;
+   line-height: 1;
+}
+
+.discover-title span {
+   color: #ef7f2b;
+}
+
+.discover-description {
+   color: #f9f9f9;
+   text-align: justify;
+}
+
+.discover-description a {
+   display: inline-block;
+   background-color: #ef7f2b;
+   color: #f9f9f9;
+   padding: 0.25rem 0.85rem;
+   margin-top: 2rem;
+   border-radius: 5px;
+}
+
+.discover-image {
+   position: relative;
+   right: 0;
+   bottom: -180px;
+   width: 40%;
+   height: 400px;
+   background-color: #ef7f2b;
+   border-radius: 60% 10% 50% 10%;
+}
+
+.discover-image img {
+   position: absolute;
+   left: -4rem;
+   bottom: 0;
+   object-fit: cover;
+}
+
+/* SERVICES SECTION */
+.section {
+   height: calc(100vh - 4rem);
+   width: 80vw;
+   margin: auto;
+   padding-top: 4rem;
+}
+
+.services-title {
+   font-family: var(--font-title);
+   font-size: 3rem;
+   color: #445656;
+   line-height: 1;
+}
+
+.services-title span {
+   color: #ef7f2b;
+}
+
+.services-container {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.services-data {
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   padding: 2rem;
+   border-radius: 10px;
+   margin-top: 3rem;
+}
+
+.services-data img {
+   width: 200px;
+   height: 150px;
+   object-fit: cover;
+   border-radius: 10px;
+}
+
+.services-description {
+   padding: 10px 0;
+}
+
+.services-description h4 {
+   font-size: 1rem;
+}
+
+.services-description p {
+   font-size: 0.75rem;
+   color: #bbb;
+}
+
+.services-button {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.services-button .price {
+   font-weight: 600;
+   font-size: 1.25rem;
+   color: #ef7f2b;
+}
+
+.services-button .price span {
+   color: #bbb;
+   font-size: 0.75rem;
+}
+
+.services-button a {
+   display: block;
+   color: #fff;
+   background-color: #ef7f2b;
+   padding: 0.15rem 0.85rem;
+   border-radius: 5px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+   .menu-button {
+      display: block;
+      cursor: pointer;
+   }
+
+   .nav {
+      width: 90vw;
+   }
+
+   .nav-menu {
+      position: absolute;
+      top: var(--header);
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background-color: #f9f9f9;
+      transition: all 0.5s ease;
+   }
+
+   .nav-menu.active {
+      left: 0;
+   }
+
+   .nav-list {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 2rem;
+   }
+
+   .nav-link {
+      padding: 1rem;
+      color: #445656;
+   }
+
+   .nav-button {
+      gap: 1rem;
+   }
+
+   .nav-button a {
+      font-size: 0.875rem;
+   }
+
+   .discover-container {
+      flex-direction: column;
+      width: 90vw;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .discover-data {
+      width: 100%;
+      height: 100%;
+   }
+
+   .discover-title {
+      font-size: 2rem;
+   }
+
+   .discover-image {
+      width: 300px;
+      height: 600px;
+      bottom: -40px;
+      left: 20px;
+   }
+
+   .discover-image img {
+      width: 300px;
+      left: -1.5rem;
+   }
+
+   .services-container {
+      flex-wrap: wrap;
+   }
+}
