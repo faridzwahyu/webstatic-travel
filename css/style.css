@@ -161,7 +161,7 @@ a {
 /* SERVICES SECTION */
 .section {
    height: calc(100vh - 4rem);
-   padding-top: 4rem;
+   padding-top: 5rem;
    width: 80vw;
    margin: auto;
 }
