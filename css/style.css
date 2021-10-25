@@ -255,16 +255,10 @@ img {
    background-color: var(--color-orange);
 }
 
-/* COMMUNITY */
-.community-container {
-}
-
+/* ==================== COMMUNITY ==================== */
 .community-container img {
    width: 300px;
    justify-self: center;
-}
-
-.community-content {
 }
 
 .community-content .title {
@@ -304,4 +298,88 @@ img {
 
 .status-item span:last-child {
    font-size: 0.75rem;
+}
+
+/* ==================== MAP ==================== */
+.map-container {
+   justify-items: center;
+}
+
+.map-container h1 {
+   line-height: 1;
+}
+
+.map-container h1 span {
+   color: var(--color-orange);
+}
+
+/* ==================== ABOUT US ==================== */
+.about-title {
+   line-height: 1;
+   margin-bottom: 1rem;
+}
+
+.about-title span {
+   color: var(--color-orange);
+}
+
+.about-description {
+   margin-bottom: 1rem;
+}
+
+.about-review {
+   background-color: var(--color-white);
+   padding: 1rem;
+   border-radius: 7px;
+}
+
+.review-item {
+   position: relative;
+}
+
+.review-item p {
+   text-align: justify;
+   margin-bottom: 1rem;
+}
+
+.review-item .rating {
+   margin-bottom: 1rem;
+}
+
+.review-item .rating i {
+   color: var(--color-orange);
+}
+
+.review-item span.name,
+.review-item span.work {
+   display: block;
+}
+
+.review-item span.name {
+   font-weight: 600;
+}
+
+.review-item span.work {
+   color: var(--color-lightgrey);
+   font-size: 0.75rem;
+}
+
+.review-button {
+   display: flex;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+.review-button i {
+   font-size: 1.5rem;
+}
+
+.review-button i:last-child {
+   transform: rotateY(180deg);
+}
+
+.about-container img {
+   width: 300px;
+   justify-self: center;
 }
