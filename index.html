@@ -11,9 +11,9 @@
    <body>
       <header class="header" id="header">
          <nav class="nav container">
-            <i class="bx bx-menu-alt-left menu-button"></i>
-            <a href="#" class="nav-title">TRVLS</a>
-            <div class="nav-menu">
+            <i class="bx bx-menu-alt-left nav-toggle"></i>
+            <a href="#" class="nav-logo">TRVLS</a>
+            <div class="nav-menu" id="nav-menu">
                <ul class="nav-list">
                   <li class="nav-item"><a href="#discover" class="nav-link">Discover</a></li>
                   <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
@@ -21,10 +21,7 @@
                   <li class="nav-item"><a href="#aboutus" class="nav-link">About Us</a></li>
                </ul>
             </div>
-            <div class="nav-button">
-               <a href="#">Login</a>
-               <a href="#">Register</a>
-            </div>
+            <a href="#" class="nav-login">Login</a>
          </nav>
       </header>
 
@@ -32,55 +29,85 @@
       <main>
          <!-- DISCOVER -->
          <section class="discover" id="discover">
-            <div class="discover-container">
+            <img src="img/home.jpg" class="discover-background" />
+
+            <div class="discover-container container grid">
                <div class="discover-data">
                   <div class="discover-title">Live your<br /><span>adventure</span></div>
-                  <div class="discover-description">
-                     <p>Don't wait until tomorrow, discover your adventure now and feel the sensation of closeness to nature around you</p>
-                     <a href="#services">Book Now</a>
-                  </div>
+                  <p class="discover-desc">Don't wait until tomorrow, discover your adventure now and feel the sensation of closeness to nature around you</p>
+                  <a href="#services" class="discover-button">Book Now</a>
                </div>
-               <div class="discover-image">
-                  <img src="img/profil.png" alt="" />
-               </div>
+
+               <img src="img/discover.png" class="discover-image" />
             </div>
          </section>
 
          <!-- SERVICES -->
          <section class="services section" id="services">
-            <div class="services-title">Find <span>popular</span><br />destinations</div>
-            <div class="services-container">
-               <div class="services-data">
-                  <img src="img/image1.jpg" alt="" />
-                  <div class="services-description">
+            <div class="services-container container">
+               <h1 class="services-title">Find <span>popular</span><br />destinations</h1>
+
+               <div class="services-data grid">
+                  <div class="services-item">
+                     <img src="img/image1.jpg" />
                      <h4>Serayu Rafting</h4>
                      <p>Dieng, Indonesia</p>
+                     <div class="label">
+                        <span class="price">$20 <span>/person</span></span>
+                        <a href="">Book</a>
+                     </div>
                   </div>
-                  <div class="services-button">
-                     <div class="price">$20 <span>/person</span></div>
-                     <a href="">Book</a>
-                  </div>
-               </div>
-               <div class="services-data">
-                  <img src="img/image2.jpg" alt="" />
-                  <div class="services-description">
+
+                  <div class="services-item">
+                     <img src="img/image2.jpg" />
                      <h4>Curug Hiji Camp</h4>
                      <p>Bogor, Indonesia</p>
+                     <div class="label">
+                        <span class="price">$142 <span>/person</span></span>
+                        <a href="">Book</a>
+                     </div>
                   </div>
-                  <div class="services-button">
-                     <div class="price">$142 <span>/person</span></div>
-                     <a href="">Book</a>
-                  </div>
-               </div>
-               <div class="services-data">
-                  <img src="img/image3.jpg" alt="" />
-                  <div class="services-description">
+
+                  <div class="services-item">
+                     <img src="img/image3.jpg" />
                      <h4>Bintang Hill</h4>
                      <p>Bandung, Indonesia</p>
+                     <div class="label">
+                        <span class="price">$80 <span>/person</span></span>
+                        <a href="">Book</a>
+                     </div>
                   </div>
-                  <div class="services-button">
-                     <div class="price">$80 <span>/person</span></div>
-                     <a href="">Book</a>
+               </div>
+            </div>
+         </section>
+
+         <!-- COMMUNITY -->
+         <section class="community section" id="community">
+            <div class="community-container container grid">
+               <img src="img/community.png" />
+
+               <div class="community-content">
+                  <h1 class="title">Our <span>stories</span> with <br />adventurers</h1>
+
+                  <p class="description">
+                     We are experienced in bringing adventurers to start their journey. All outdoor destinations in the world are our specialties. <br />
+                     <br />
+                     So don't hesitate to start your adventure right now, nature has already called you !
+                  </p>
+
+                  <div class="status">
+                     <div class="status-item">
+                        <span>12k+</span>
+                        <span>Success Journey</span>
+                     </div>
+                     <div class="status-item">
+                        <span>16+</span>
+                        <span>Awards Wining</span>
+                     </div>
+                     <div class="status-item">
+                        <span>20+</span>
+                        <span>Years Of Experience</span>
+                     </div>
                   </div>
                </div>
             </div>

@@ -1,5 +1,5 @@
 const menu = document.querySelector(".nav-menu");
-const menuToggle = document.querySelector(".menu-button");
+const menuToggle = document.querySelector(".nav-toggle");
 const links = document.querySelectorAll(".nav-link");
 const header = document.querySelector(".header");
 
@@ -14,9 +14,7 @@ links.forEach((link) => {
 });
 
 window.addEventListener("scroll", () => {
-   const scrollY = window.pageYOffset;
-
-   if (scrollY > 500) {
+   if (this.scrollY >= 500) {
       header.classList.add("solid");
    } else {
       header.classList.remove("solid");
