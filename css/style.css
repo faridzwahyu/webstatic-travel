@@ -70,7 +70,7 @@ img {
 }
 
 .container {
-   max-width: 968px;
+   max-width: 1024px;
    margin-right: 1rem;
    margin-left: 1rem;
 }
@@ -110,10 +110,12 @@ img {
 }
 
 .nav-logo {
+   color: var(--color-orange);
    font-family: var(--font-title);
+   font-size: var(--font-normal);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
    .nav-menu {
       position: fixed;
       top: var(--header);
@@ -168,25 +170,26 @@ img {
 .discover-data {
    padding-top: 1rem;
    color: var(--color-white);
+   display: flex;
+   flex-direction: column;
+   row-gap: 0.75rem;
 }
 
 .discover-title {
    font-family: var(--font-title);
    font-size: var(--font-big);
    line-height: 1;
-   margin-bottom: 0.75rem;
 }
 
 .discover-title span {
    color: var(--color-orange);
 }
 
-.discover-desc {
-   margin-bottom: 0.75rem;
+.discover-desc p {
+   margin-bottom: 1.5rem;
 }
 
-.discover-button {
-   display: inline-block;
+.discover-desc a {
    padding: 0.15rem 0.5rem;
    border-radius: 5px;
    background-color: var(--color-orange);
@@ -276,7 +279,9 @@ img {
 
 .community-content .status {
    display: flex;
-   justify-content: space-around;
+   flex-wrap: wrap;
+   gap: 2rem;
+   justify-content: center;
 }
 
 .status-item {
@@ -438,6 +443,7 @@ img {
 }
 
 .footer-item h4 {
+   font-size: var(--font-small);
    text-transform: uppercase;
 }
 
@@ -453,4 +459,90 @@ img {
    row-gap: 0.2rem;
    font-size: 0.75rem;
    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+   /* ==================== BASE ==================== */
+   .container {
+      margin-left: 3rem;
+      margin-right: 3rem;
+   }
+
+   /* ==================== HEADER ==================== */
+   .nav-toggle {
+      display: none;
+   }
+
+   .nav-list {
+      flex-direction: initial;
+      column-gap: 2.5rem;
+   }
+
+   /* ==================== DISCOVER ==================== */
+   .discover-container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .discover-data {
+      align-self: center;
+      row-gap: 2rem;
+   }
+
+   .discover-image {
+      justify-self: end;
+      width: 340px;
+   }
+
+   /* ==================== SERVICES ==================== */
+   .services-data {
+      place-content: center;
+      grid-template-columns: repeat(auto-fit, 300px);
+   }
+
+   /* ==================== COMMUNITY ==================== */
+   .community-container {
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+   }
+
+   /* ==================== ABOUT US ==================== */
+   .about-container {
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+   }
+
+   /* ==================== FOOTER ==================== */
+   .footer-content {
+      flex-direction: initial;
+      column-gap: 3rem;
+      align-items: flex-start;
+   }
+
+   .footer-description {
+      max-width: 50%;
+   }
+
+   .footer-item h4 {
+      margin-bottom: 0.5rem;
+   }
+
+   .footer-mark {
+      flex-direction: initial;
+   }
+
+   .footer-mark span:first-child {
+      min-width: 50%;
+   }
+
+   .footer-mark span:nth-child(2) {
+      min-width: 25%;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   /* ==================== BASE ==================== */
+   .container {
+      margin-left: auto;
+      margin-right: auto;
+   }
 }
