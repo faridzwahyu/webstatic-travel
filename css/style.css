@@ -262,6 +262,8 @@ img {
 .community-container img {
    width: 300px;
    justify-self: center;
+   border-radius: 10px;
+   border: 5px solid var(--color-white);
 }
 
 .community-content .title {
@@ -387,6 +389,8 @@ img {
 .about-container img {
    width: 300px;
    justify-self: center;
+   border-radius: 10px;
+   border: 5px solid var(--color-white);
 }
 
 /* ==================== GET STARTED ==================== */
