@@ -9,6 +9,20 @@
       <title>TRVLS Trip & Travel</title>
    </head>
    <body>
+      <!-- MODAL -->
+      <div class="modal">
+         <i class="bx bx-x close"></i>
+         <div class="modal-title">Login</div>
+         <form action="" class="modal-form">
+            <label for="name">Username</label>
+            <input type="text" />
+            <label for="password">Password</label>
+            <input type="password" />
+            <button type="submit">Login</button>
+         </form>
+      </div>
+
+      <!-- HEADER -->
       <header class="header" id="header">
          <nav class="nav container">
             <i class="bx bx-menu-alt-left nav-toggle"></i>
@@ -21,7 +35,7 @@
                   <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
                </ul>
             </div>
-            <a href="#" class="nav-login">Login</a>
+            <div href="" class="nav-login">Login</div>
          </nav>
       </header>
 
@@ -36,7 +50,19 @@
                   <div class="discover-title">Live your<br /><span>adventure</span></div>
                   <div class="discover-desc">
                      <p>Don't wait until tomorrow, discover your adventure now and feel the sensation of closeness to nature around you</p>
-                     <a href="#services">Book Now</a>
+                     <form class="booking" action="">
+                        <label for="destination">Find your destination</label>
+                        <input list="place" id="destination" placeholder="Destination..." />
+                        <datalist id="place">
+                           <option value="Bromo"></option>
+                           <option value="Kawah Ijen"></option>
+                           <option value="Tumpak Sewu"></option>
+                           <option value="Kota Wisata Batu"></option>
+                           <option value="Taman Nasional Baluran"></option>
+                           <option value="Alas Purwo"></option>
+                        </datalist>
+                        <button type="submit">Book Now</button>
+                     </form>
                   </div>
                </div>
 
